@@ -57,7 +57,7 @@ export default function Navbar() {
             <Link href="#work" style={linkStyle}>
               Work
             </Link>
-            <Link href="#Reach Me" style={linkStyle}>
+            <Link href="#hero" style={linkStyle}>
               Reach Me
             </Link>
           </div>

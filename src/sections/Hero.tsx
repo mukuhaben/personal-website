@@ -90,11 +90,12 @@ useEffect(() => {
           {/* LEFT */}
           <div>
             <h1 className="accent-glow">
-              Benson Ngatia
+              Benson Mukuha Ngatia
             </h1>
 
             <p style={{ marginTop: "1.5rem", fontSize: "1.15rem" }}>
-              Building production systems and teaching applied technology.
+                       Phone:0707501094 <br></br>
+                       Email:mukuhabenson@gmail.com
             </p>
 
             {/* HIRE ME AS */}

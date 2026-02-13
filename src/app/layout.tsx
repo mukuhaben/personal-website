@@ -26,10 +26,7 @@ export default function RootLayout({
           {children}
         </main>
 
-        <footer id= "Reach Me">
-          Phone:0707501094 <br></br>
-          Email:mukuhabenson@gmail.com
-        </footer>
+
       </body>
     </html>
   );
