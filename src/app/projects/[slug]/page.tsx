@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { projects } from "@/data/projects";
-import FadeIn from "@/components/FadeIn";
+
 
 
 interface Props {
@@ -16,36 +16,36 @@ export default async function ProjectPage({ params }: Props) {
 
   return (
     <section className="max-w-4xl">
-      <FadeIn>
+      
       <h1 className="text-4xl font-bold mb-6">{project.title}</h1>
-      </FadeIn>
+      
 
-      <FadeIn>
+      
       <p className="text-gray-400 mb-10 leading-relaxed">
         {project.overview}
       </p>
-      </FadeIn>
+      
 
       
       {project.problem && (
-        <FadeIn>
+        
           <div className="mb-10">
           <h2 className="text-2xl font-semibold mb-4">Problem</h2>
           <p className="text-gray-400 leading-relaxed">
             {project.problem}
           </p>
         </div>
-        </FadeIn>
+        
       )}
 
       {project.architecture && (
         <div className="mb-10">
-        <FadeIn>
+       
             <h2 className="text-2xl font-semibold mb-4">Architecture</h2>
           <p className="text-gray-400 leading-relaxed">
             {project.architecture}
           </p>
-          </FadeIn>
+         
         </div>
       )}
 
