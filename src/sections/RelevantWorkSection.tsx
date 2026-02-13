@@ -19,18 +19,47 @@ export default function RelevantWorkSection() {
             }}
      >
         <div className="container">
-          <h2 className="section-title">Teaching Portfolio</h2>
+              <h2 className="section-title">Teaching Portfolio</h2>
 
-          <p>
-            Structured curriculum development and instruction in
-            programming, system design, and ICT disciplines.
-            Course materials and teaching frameworks are currently
-            under active development.
-          </p>
+              <p>
+                Structured curriculum development and instruction in
+                programming, system design, and ICT disciplines.
+                Course materials and teaching frameworks are currently
+                under active development.
+              </p>
+          
         </div>
       </section>
     );
   }
+
+// ICT officer role/view:
+
+  if (role === "ict officer") {
+    return (
+      <section
+              className="section"
+              style={{
+              padding: "1rem 0",
+              borderTop: "1px solid var(--border-subtle)"
+            }}
+     >
+        <div className="container">
+              <h2 className="section-title">ICT officer Portfolio</h2>
+
+              <p>
+                  Beyond development, I have supported LAN infrastructure, managed
+                  institutional ICT laboratories, and supervised technical capstone
+                  projects — bridging systems engineering and education.Certified CCNA, Netwroking Technician with 
+                  experience working for the goverment of Kenya
+        
+              </p>
+          
+        </div>
+      </section>
+    );
+  }
+
 
   const filtered = projects.filter((p) =>
     p.roles.includes(role)

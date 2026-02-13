@@ -48,7 +48,7 @@ impact:
       "Responsive UI across devices",
     ],
     tech: ["React", "Node.js", "Express", "SQL", "REST APIs"],
-liveUrl: "https://marketplace-six-sooty.vercel.app",
+liveUrl: "https://marketplace-ngatia.vercel.app/",
 roles: ["backend", "freelance","developer"],
 
   },
