@@ -57,9 +57,15 @@ export default function Navbar() {
             <Link href="#work" style={linkStyle}>
               Work
             </Link>
-            <Link href="#hero" style={linkStyle}>
-              Reach Me
-            </Link>
+<a
+  href="/BENSON MUKUHA NGATIA ~CV.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={linkStyle}
+>
+  Reach Me
+</a>
+
           </div>
 
           {/* Mobile Hamburger */}
@@ -120,9 +126,16 @@ export default function Navbar() {
           <Link href="#work" style={mobileLinkStyle} onClick={() => setOpen(false)}>
             Work
           </Link>
-          <Link href="#about" style={mobileLinkStyle} onClick={() => setOpen(false)}>
-            About
-          </Link>
+<a
+  href="/BENSON MUKUHA NGATIA ~CV.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={mobileLinkStyle}
+  onClick={() => setOpen(false)}
+>
+  Reach Me
+</a>
+
         </div>
       </div>
 
