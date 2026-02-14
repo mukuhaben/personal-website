@@ -8,7 +8,7 @@ const roles = [
     key: "developer",
     label: "FullStack Software Developer",
     description:
-      "Full-stack applications, scalable backend systems, payment integrations and production-ready deployments."
+      "Full-stack applications, scalable backend systems, payment integrations and production-ready deployments,Database architecture, APIs, system design, authentication, infrastructure and performance optimization"
   },
   {
     key: "instructor",
@@ -22,6 +22,8 @@ const roles = [
     description:
       "Supporting enterprise systems, infrastructure operations, and organizational IT environments."
   },
+  
+  /*
   {
     key: "backend",
     label: "Backend Developer",
@@ -40,6 +42,7 @@ const roles = [
     description:
       "Designing modular, maintainable systems aligned with enterprise needs and long-term scalability."
   }
+      */
 ];
 
 export default function Hero() {
@@ -49,10 +52,20 @@ export default function Hero() {
 
   const [isMobile, setIsMobile] = useState(false);
 
+
+
+    /*relevant work section developer to be default so projects show even when no role selected*/
+  useEffect(() => {
+  setRole("developer");
+}, [setRole]);
+
+
 useEffect(() => {
   const checkScreen = () => {
     setIsMobile(window.innerWidth < 768);
   };
+
+
 
   checkScreen();
   window.addEventListener("resize", checkScreen);

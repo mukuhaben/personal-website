@@ -3,10 +3,13 @@
 import { useState } from "react";
 import Link from "next/link";
 
+
+
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [showTestimonials, setShowTestimonials] = useState(false);
 
-  return (
+    return (
     <>
       <nav
         style={{
@@ -57,14 +60,61 @@ export default function Navbar() {
             <Link href="#work" style={linkStyle}>
               Work
             </Link>
-<a
-  href="/BENSON MUKUHA NGATIA ~CV.pdf"
-  target="_blank"
-  rel="noopener noreferrer"
-  style={linkStyle}
->
-  Reach Me
-</a>
+           
+           {/* Testimonials */}
+<div style={{ position: "relative" }}>
+  <span
+    style={{ ...linkStyle, cursor: "pointer" }}
+    onClick={() => setShowTestimonials(!showTestimonials)}
+  >
+    Testimonials
+  </span>
+
+  {showTestimonials && (
+    <div
+      style={{
+        position: "absolute",
+        top: "120%",
+        right: 0,
+        background: "var(--bg-panel)",
+        border: "1px solid var(--border-subtle)",
+        padding: "0.8rem",
+        display: "flex",
+        flexDirection: "column",
+        gap: "0.6rem",
+        minWidth: "220px",
+      }}
+    >
+      <a
+        href="/BENSON MUKUHA NGATIA ~CV.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={linkStyle}
+      >
+        Curriculum Vitae
+      </a>
+
+      <a
+        href="/Academic Certificates.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={linkStyle}
+      >
+        Academic Certificates
+      </a>
+
+      <a
+        href="/Proffesional Certificates.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={linkStyle}
+      >
+        Professional Certificates
+      </a>
+    </div>
+  )}
+</div>
+
 
           </div>
 
@@ -126,15 +176,49 @@ export default function Navbar() {
           <Link href="#work" style={mobileLinkStyle} onClick={() => setOpen(false)}>
             Work
           </Link>
-<a
-  href="/BENSON MUKUHA NGATIA ~CV.pdf"
-  target="_blank"
-  rel="noopener noreferrer"
-  style={mobileLinkStyle}
-  onClick={() => setOpen(false)}
+          {/*cv button */}
+         {/* Testimonials */}
+<span
+  style={{ ...mobileLinkStyle, cursor: "pointer" }}
+  onClick={() => setShowTestimonials(!showTestimonials)}
 >
-  Reach Me
-</a>
+  Testimonials
+</span>
+
+{showTestimonials && (
+  <div style={{ paddingLeft: "1rem", display: "flex", flexDirection: "column", gap: "1rem" }}>
+    <a
+      href="/BENSON MUKUHA NGATIA ~CV.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={mobileLinkStyle}
+      onClick={() => setOpen(false)}
+    >
+      Curriculum Vitae
+    </a>
+
+    <a
+      href="/Academic_Certificates.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={mobileLinkStyle}
+      onClick={() => setOpen(false)}
+    >
+      Academic Certificates
+    </a>
+
+    <a
+      href="/Professional_Certificates.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={mobileLinkStyle}
+      onClick={() => setOpen(false)}
+    >
+      Professional Certificates
+    </a>
+  </div>
+)}
+
 
         </div>
       </div>
