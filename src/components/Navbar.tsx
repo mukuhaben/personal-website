@@ -58,7 +58,7 @@ export default function Navbar() {
               Home
             </Link>
             <Link href="#work" style={linkStyle}>
-              Work
+              Relevant Works
             </Link>
            
            {/* Testimonials */}
@@ -174,9 +174,9 @@ export default function Navbar() {
             Home
           </Link>
           <Link href="#work" style={mobileLinkStyle} onClick={() => setOpen(false)}>
-            Work
+           Relevant Works
           </Link>
-          {/*cv button */}
+          
          {/* Testimonials */}
 <span
   style={{ ...mobileLinkStyle, cursor: "pointer" }}
@@ -198,7 +198,7 @@ export default function Navbar() {
     </a>
 
     <a
-      href="/Academic_Certificates.pdf"
+      href="/Academic Certificates.pdf"
       target="_blank"
       rel="noopener noreferrer"
       style={mobileLinkStyle}
@@ -208,7 +208,7 @@ export default function Navbar() {
     </a>
 
     <a
-      href="/Professional_Certificates.pdf"
+      href="/Proffesional Certificates.pdf"
       target="_blank"
       rel="noopener noreferrer"
       style={mobileLinkStyle}
