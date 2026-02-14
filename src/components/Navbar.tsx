@@ -42,7 +42,7 @@ export default function Navbar() {
               textDecoration: "none",
             }}
           >
-            Portfolio
+            
           </Link>
 
           {/* Desktop Links */}
