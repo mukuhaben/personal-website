@@ -46,14 +46,14 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Links */}
-          <div
-            className="desktop-menu"
-            style={{
-              display: "flex",
-              gap: "2rem",
-              alignItems: "center",
-            }}
-          >
+                <div
+              className="desktop-menu"
+              style={{
+                gap: "2rem",
+                alignItems: "center",
+              }}
+            >
+
             <Link href="#hero" style={linkStyle}>
               Home
             </Link>
@@ -224,19 +224,25 @@ export default function Navbar() {
       </div>
 
       {/* Responsive Rules */}
-      <style jsx>{`
-        @media (min-width: 900px) {
-          .mobile-toggle {
-            display: none;
-          }
-        }
-
-        @media (max-width: 899px) {
+     <style jsx>{`
           .desktop-menu {
-            display: none;
+            display: flex;
           }
-        }
-      `}</style>
+
+          @media (min-width: 900px) {
+            .mobile-toggle {
+              display: none;
+            }
+          }
+
+          @media (max-width: 899px) {
+            .desktop-menu {
+              display: none;
+            }
+          }
+        `}
+      </style>
+
     </>
   );
 }
