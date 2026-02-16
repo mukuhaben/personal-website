@@ -86,7 +86,7 @@ export default function Navbar() {
       }}
     >
       <a
-        href="/BENSON MUKUHA NGATIA ~CV.pdf"
+        href="/BENSON MUKUHA NGATIA.pdf"
         target="_blank"
         rel="noopener noreferrer"
         style={linkStyle}
@@ -188,7 +188,7 @@ export default function Navbar() {
 {showTestimonials && (
   <div style={{ paddingLeft: "1rem", display: "flex", flexDirection: "column", gap: "1rem" }}>
     <a
-      href="/BENSON MUKUHA NGATIA ~CV.pdf"
+      href="/BENSON MUKUHA NGATIA.pdf"
       target="_blank"
       rel="noopener noreferrer"
       style={mobileLinkStyle}
