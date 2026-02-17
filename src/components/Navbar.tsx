@@ -85,6 +85,7 @@ export default function Navbar() {
         minWidth: "220px",
       }}
     >
+      
       <a
         href="/BENSON MUKUHA NGATIA.pdf"
         target="_blank"
@@ -93,7 +94,7 @@ export default function Navbar() {
       >
         Curriculum Vitae
       </a>
-
+{/*
       <a
         href="/Academic Certificates.pdf"
         target="_blank"
@@ -102,7 +103,7 @@ export default function Navbar() {
       >
         Academic Certificates
       </a>
-
+*/}
       <a
         href="/Proffesional Certificates.pdf"
         target="_blank"
@@ -196,7 +197,7 @@ export default function Navbar() {
     >
       Curriculum Vitae
     </a>
-
+  {/*
     <a
       href="/Academic Certificates.pdf"
       target="_blank"
@@ -206,7 +207,7 @@ export default function Navbar() {
     >
       Academic Certificates
     </a>
-
+*/}
     <a
       href="/Proffesional Certificates.pdf"
       target="_blank"
