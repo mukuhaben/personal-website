@@ -21,7 +21,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     slug: "marketplace-mvp",
-    title: "Marketplace Platform with Commission & Cashback Engine",
+    title: "E-COMMERCE -  (Marketplace Platform with Commission & Cashback Engine)",
     shortDescription:
       "Multi-role e-commerce marketplace with admin, agent commissions and customer wallet cashback logic.",
     overview:
@@ -73,7 +73,7 @@ roles: ["backend", "freelance","developer"],
   },
   {
     slug: "Trek-N-Tread",
-    title: "Booking/Payment-Integrated Static website",
+    title: "TREK & TREAD   - (Booking/Payment-Integrated Static website)",
     shortDescription:
       "Service platform integrated with Paystack payment gateway.",
     overview:

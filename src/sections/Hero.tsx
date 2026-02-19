@@ -89,7 +89,8 @@ useEffect(() => {
   };
 
   return (
-    <section className="section" style={{ paddingTop: "7rem" }}>
+   <section className="section" style={{ paddingTop: "7rem", paddingBottom: "2rem" }}>
+
       <div className="container">
         <div
           style={{
@@ -103,13 +104,58 @@ useEffect(() => {
           {/* LEFT */}
           <div>
             <h1 className="accent-glow">
-              Benson Mukuha Ngatia
+              Benson Ngatia
             </h1>
 
-            <p style={{ marginTop: "1.5rem", fontSize: "1.15rem" }}>
-                       Phone:0707501094 <br></br>
-                       Email:mukuhabenson@gmail.com
-            </p>
+            <p style={{ marginTop: "1.5rem", fontSize: "1.05rem", lineHeight: "1.9" }}>
+  📞{" "}
+  <a
+    href="tel:0707501094"
+    style={{ color: "#cbd5e1", textDecoration: "none" }}
+  >
+    0707501094
+  </a>
+  <br />
+
+  ✉️{" "}
+  <a
+    href="mailto:mukuhabenson@gmail.com"
+    style={{ color: "#cbd5e1", textDecoration: "none" }}
+  >
+    mukuhabenson@gmail.com
+  </a>{" "}
+  /{" "}
+  <a
+    href="mailto:254engineerben@gmail.com"
+    style={{ color: "#cbd5e1", textDecoration: "none" }}
+  >
+    254engineerben@gmail.com
+  </a>
+  <br />
+
+  💼{" "}
+  <a
+    href="https://www.linkedin.com/in/ngatiaben"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ color: "#cbd5e1", textDecoration: "none" }}
+  >
+    www.linkedin.com/in/ngatiaben
+  </a>
+  <br />
+
+  💻{" "}
+  <a
+    href="https://github.com/mukuhaben"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ color: "#cbd5e1", textDecoration: "none" }}
+  >
+    github.com/mukuhaben
+  </a>
+  <br />
+</p>
+
 
             {/* HIRE ME AS */}
             <div
